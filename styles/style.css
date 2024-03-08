@@ -1,0 +1,68 @@
+.ul-contains-li{
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    
+}
+
+.li-style-navbar{
+    padding: 0 70px 0 0;
+}
+
+.ul-contains-li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.ul-contains-li a:hover{
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+/*style of main*/
+.div-text-enctipt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#text-for-encript{
+    width: 65%;
+    height: 400px;
+    margin-top: 75px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 7px;
+}
+
+.div-buttons-section-transcript{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*when text has ben encriptated*/
+.div-general-encript{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*style of option*/
+.style-option-bar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
