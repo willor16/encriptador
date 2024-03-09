@@ -8,10 +8,6 @@ let palabrareordenada="";
 let historialEncriptando =[];
 let HistorialEncriptado = [];
 
-
-
-
-
 //funcion para encriptar nivel wilmer
 function encriptWilmerLvOne(){
     cadena=[];
@@ -44,17 +40,20 @@ palabrareordenada = palabrareordenada.map(letraE => letraE.toLowerCase() === 'e'
 palabrareordenada = palabrareordenada.map(letraF => letraF.toLowerCase() === 'f' ? '00as8790054d000' :letraF);
 palabrareordenada = palabrareordenada.map(letraG => letraG.toLowerCase() === 'g' ? '64xfd87df95d887' :letraG);
 palabrareordenada = palabrareordenada.map(letraH => letraH.toLowerCase() === 'h' ? '87sf78qq9ybb786' :letraH);
+palabrareordenada = palabrareordenada.map(letraI => letraI.toLowerCase() === 'i' ? '45af5e6s2v1gu7n' :letraI);
 palabrareordenada = palabrareordenada.map(letraJ => letraJ.toLowerCase() === 'j' ? '961dcng148hg7b7' :letraJ);
 palabrareordenada = palabrareordenada.map(letraK => letraK.toLowerCase() === 'k' ? 'a584dhkohgyu009' :letraK);
 palabrareordenada = palabrareordenada.map(letraL => letraL.toLowerCase() === 'l' ? 'dfgd7496f6d8gh8' :letraL);
 palabrareordenada = palabrareordenada.map(letraM => letraM.toLowerCase() === 'm' ? '789dcvbedrgs9s8' :letraM);
 palabrareordenada = palabrareordenada.map(letraN => letraN.toLowerCase() === 'n' ? '998sdf4j2h8f5f6' :letraN);
+palabrareordenada = palabrareordenada.map(letraO => letraO.toLowerCase() === 'o' ? '9h2m8ku3u1u4k8u' :letraO);
 palabrareordenada = palabrareordenada.map(letraP => letraP.toLowerCase() === 'p' ? '0045009800sdfes' :letraP);
 palabrareordenada = palabrareordenada.map(letraQ => letraQ.toLowerCase() === 'q' ? '789xb8kl9h79re9' :letraQ);
-palabrareordenada = palabrareordenada.map(letraF => letraF.toLowerCase() === 'r' ? '9s8d7fgv4bh5h4h' :letraF);
-palabrareordenada = palabrareordenada.map(letraG => letraG.toLowerCase() === 's' ? '996sdf2c45c1c5r' :letraG);
-palabrareordenada = palabrareordenada.map(letraH => letraH.toLowerCase() === 't' ? '98fg7r8d5r1d2s6' :letraH);
-palabrareordenada = palabrareordenada.map(letraJ => letraJ.toLowerCase() === 'v' ? '88f5bb55s5ss5gr' :letraJ);
+palabrareordenada = palabrareordenada.map(letraR => letraR.toLowerCase() === 'r' ? '9s8d7fgv4bh5h4h' :letraR);
+palabrareordenada = palabrareordenada.map(letraS => letraS.toLowerCase() === 's' ? '996sdf2c45c1c5r' :letraS);
+palabrareordenada = palabrareordenada.map(letraT => letraT.toLowerCase() === 't' ? '98fg7r8d5r1d2s6' :letraT);
+palabrareordenada = palabrareordenada.map(letraU => letraU.toLowerCase() === 'u' ? 's5d4f8e6w1s3g1b' :letraU);
+palabrareordenada = palabrareordenada.map(letrav => letrav.toLowerCase() === 'v' ? '88f5bb55s5ss5gr' :letrav);
 palabrareordenada = palabrareordenada.map(letraK => letraK.toLowerCase() === 'w' ? '96d3x185s4g8r3r' :letraK);
 palabrareordenada = palabrareordenada.map(letraL => letraL.toLowerCase() === 'x' ? '78d9f2d1d4jj2i4' :letraL);
 palabrareordenada = palabrareordenada.map(letraM => letraM.toLowerCase() === 'y' ? 'p9y8y5h8k9o4548' :letraM);
