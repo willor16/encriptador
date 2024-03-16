@@ -5,10 +5,14 @@ let variableMomentanea;
 let longitud=0;
 let descuento=1;
 let palabrareordenada=[];
-let historialEncriptando =[];
-let HistorialEncriptado = [];
 let shoWords="";
-let newWord ="";    
+let newWord ="";
+let historialOfWordsEncripted = [];
+let historialOfWordsEncripting = [];
+let newOrderLvOne = []; //array of algortim lv on
+
+
+
 //funciton replace level alura
 function aluraEnript(){
     shoWords=document.getElementById('text-encripting').id;
@@ -102,7 +106,8 @@ function constructorOtherMethod(){
     palabrareordenada = palabrareordenada.map(letraÑ => letraÑ.toLowerCase() === 'ñ' ? '46546af486e4f8w' :letraÑ);
     //empty value
     palabrareordenada = palabrareordenada.map(spaceWord => spaceWord === " " ? '00100577770077w' :spaceWord);
-
+    //save word in a other array because need saver for other array
+    newOrderLvOne = palabrareordenada;
     console.log(palabrareordenada);
     //print new array but convert array to string
     
@@ -112,14 +117,11 @@ function constructorOtherMethod(){
 }
 
 
-//reordenamiento. se divide en pares e impares
-
 //function for save in a temporal variable all words
-function guardarHistorial(){
-    historialEncriptando.push(palabra);
-    console.log(historialEncriptando);
-    
-
+function guardarHistorial(wordForSabeEncriptated, wordForSabeEncripting){
+    //save words encriptated and words no encripted
+    historialOfWordsEncripted.push(wordForSabeEncriptated);
+    historialOfWordsEncripting.push(wordForSabeEncripting);
 }
 
 function encriptationGeneral(){
@@ -129,15 +131,19 @@ function encriptationGeneral(){
         aluraEnript();
     }else if (comprobation == 'nivelWilmer'){
         replaceWilmerStyle();
+        wilmerLvAlgoritm(); //just for tester
     }else if (comprobation == 'nivelWilmerLvTwo'){
         
     }
+
+    guardarHistorial(palabra);
 }
 
 function desencriptarGeneral(){
     let comprobation = document.getElementById('select-level-encript').value;
     if (comprobation == 'nivelAlura'){
         desencriptarAluraEnript();
+
     }else if(comprobation == 'nivelWilmer'){
         
     }else if(comprobation == 'nivelWilmerLvTwo'){
@@ -152,7 +158,11 @@ function addElementWord(element, text){
 }
 
 
-
-
-
-
+//function for replace with algoritm
+function wilmerLvAlgoritm(){
+    const countLengthMiddle= 0;
+    const secundaryCount=0;
+    console.log(newOrderLvOne);
+    //algoritm
+    console.log>(newOrderLvOne.length[newOrderLvOne.length-2]); 
+}
