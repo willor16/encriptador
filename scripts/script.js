@@ -10,8 +10,10 @@ let newWord ="";
 let historialOfWordsEncripted = [];
 let historialOfWordsEncripting = [];
 let newOrderLvOne = []; //array of algortim lv on
+let newWordLvWilmerOne = [];
 
 
+let countLengthMiddle= 0;
 
 //funciton replace level alura
 function aluraEnript(){
@@ -59,7 +61,8 @@ function desencriptarAluraEnript(){
 function constructorOtherMethod(){
     cadena=[];
     palabra = document.getElementById('text-for-encript').value;
-    longitud = palabra.length
+    longitud = palabra.length;
+    secundaryLength = longitud;
     //parametro = palabra.length
     console.log("longitud" +longitud);
     console.log(palabra[palabra.length-1]);
@@ -160,9 +163,37 @@ function addElementWord(element, text){
 
 //function for replace with algoritm
 function wilmerLvAlgoritm(){
-    const countLengthMiddle= 0;
-    const secundaryCount=0;
+    let tempralNumerN = 0;
+    shoWords=document.getElementById('text-encripting').id;
+    palabra = document.getElementById('text-for-encript').value;
+    let countLengthMiddle = 0;
     console.log(newOrderLvOne);
     //algoritm
-    console.log>(newOrderLvOne.length[newOrderLvOne.length-2]); 
+    console.log(newOrderLvOne[newOrderLvOne.length-2]);
+    if (secundaryLength%2 == 0){
+        countLengthMiddle = secundaryLength/2;
+        tempralNumerN= 0;
+        while(countLengthMiddle< secundaryLength){
+            countLengthMiddle ++;
+            tempralNumerN ++;
+            
+            newWordLvWilmerOne.push(newOrderLvOne[newOrderLvOne.length-countLengthMiddle]);
+            newWordLvWilmerOne.push(newOrderLvOne[newOrderLvOne.length-tempralNumerN]);
+            
+            console.log("contador mitad mayor " + countLengthMiddle);
+            console.log("contador mitad menor " + tempralNumerN);
+
+            console.log("contador" + countLengthMiddle);
+        }
+        console.log("secundario " + secundaryLength);
+        console.log("xd " + countLengthMiddle);
+        console.log("mostrando la palabra " + newWordLvWilmerOne);
+        newWord = newWordLvWilmerOne.join('');
+        addElementWord(shoWords, newWord);
+        console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-1]);
+        console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-2]);
+        console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-3]);
+        console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-4]);
+    }
+    newWordLvWilmerOne = [];
 }
