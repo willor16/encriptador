@@ -12,6 +12,7 @@ let historialOfWordsEncripting = [];
 let newOrderLvOne = []; //array of algortim lv on
 let newWordLvWilmerOne = [];
 
+let tempralNumerN = 0;
 
 let countLengthMiddle= 0;
 
@@ -53,8 +54,8 @@ function desencriptarAluraEnript(){
     guardarHistorial();
     addElementWord(shoWords, lastWord);
     palabra="";
+    desencriptationWilmerLvOne();
     return lastWord;
-    
 }
 
 //funcion para encriptar nivel wilmer
@@ -117,6 +118,8 @@ function constructorOtherMethod(){
     guardarHistorial();
     
     console.log
+    //reiniciando cadena
+    cadena = [];
 }
 
 
@@ -163,7 +166,6 @@ function addElementWord(element, text){
 
 //function for replace with algoritm
 function wilmerLvAlgoritm(){
-    let tempralNumerN = 0;
     shoWords=document.getElementById('text-encripting').id;
     palabra = document.getElementById('text-for-encript').value;
     let countLengthMiddle = 0;
@@ -194,6 +196,19 @@ function wilmerLvAlgoritm(){
         console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-2]);
         console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-3]);
         console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-4]);
+        console.log(newWord.length);
     }
     newWordLvWilmerOne = [];
+    
+}
+// iniciando logica de desencriptacion lv2
+
+//-poner unavariable que divida todo dentro de 15
+//-cuando ya este esa variable hacer la logica que devuelva de 15 en 15 los valores reordenandolos a su valor original
+function desencriptationWilmerLvOne(){
+    for (let index = 0; index < newWord.length; index += 15) {
+        let suSecciones = newWord.slice(index, index + 15);
+        cadena.push(suSecciones);
+    }
+    console.log(cadena);
 }
