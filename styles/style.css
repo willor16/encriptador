@@ -23,7 +23,7 @@
 
 .ul-contains-li a:hover{
     font-size: 18px;
-    color: whitesmoke;
+    color: whitesmoke;	
 }
 
 /*style of main*/
@@ -130,7 +130,7 @@
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #6b747b;
+	color: black;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -323,7 +323,7 @@
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		background-color: #f7f9fa;
+		background-color: rgb(26, 119, 148);
 	}
 
 	.offcanvas-collapse {
