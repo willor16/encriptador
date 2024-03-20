@@ -103,11 +103,53 @@ function constructorOtherMethod(){
     
     console.log
     //reiniciando cadena
-    cadena = [];
+    ;
+}
+
+//-poner unavariable que divida todo dentro de 15
+//-cuando ya este esa variable hacer la logica que devuelva de 15 en 15 los valores reordenandolos a su valor original
+function algoritmoDeConverisonArrayCadena(){
+    palabra = document.getElementById('text-for-encript').value;
+    for (let index = palabra.length; index > 0 ; index -= 15) {
+        let suSecciones = palabra.slice(Math.max(0, index - 15), index);
+        cadena.push(suSecciones);
+    }
+    console.log(cadena);
 }
 
 //funcion para construir un array y poer sustituir letras 
 function constructorDesencritpacion(){
+    palabrareordenada="";
+    palabrareordenada = cadena.map(letraa => letraa.toLowerCase() === '56a565f8a8ese42' ? 'a' : letraa);
+    palabrareordenada = palabrareordenada.map(letrabb => letrabb.toLowerCase() === '99s9f8r5g5h5j5r' ? 'b' : letrabb);
+    palabrareordenada = palabrareordenada.map(letracc => letracc.toLowerCase() === '46sd79s80000471' ? 'c' : letracc);
+    palabrareordenada = palabrareordenada.map(letradd => letradd.toLowerCase() === '96poe147ddf2783' ? 'd' : letradd );
+    palabrareordenada = palabrareordenada.map(letraee => letraee.toLowerCase() === '78s9fg5f5gh7dr8' ? 'e' : letraee );
+    palabrareordenada = palabrareordenada.map(letraff => letraff.toLowerCase() === '00as8790054d000' ? 'f' : letraff );
+    palabrareordenada = palabrareordenada.map(letragg => letragg.toLowerCase() === '64xfd87df95d887' ? 'g' : letragg );
+    palabrareordenada = palabrareordenada.map(letrahh => letrahh.toLowerCase() === '64xfd87df95d887' ? 'h' : letrahh );
+    palabrareordenada = palabrareordenada.map(letraii => letraii.toLowerCase() === '45af5e6s2v1gu7n' ? 'i' : letraii );
+    palabrareordenada = palabrareordenada.map(letrajj => letrajj.toLowerCase() === '961dcng148hg7b7' ? 'j' : letrajj );
+    palabrareordenada = palabrareordenada.map(letrakk => letrakk.toLowerCase() === 'a584dhkohgyu009' ? 'k' : letrakk );
+    palabrareordenada = palabrareordenada.map(letrall => letrall.toLowerCase() === 'dfgd7496f6d8gh8' ? 'l' : letrall );
+    palabrareordenada = palabrareordenada.map(letramm => letramm.toLowerCase() === '789dcvbedrgs9s8' ? 'm' : letramm );
+    palabrareordenada = palabrareordenada.map(letrann => letrann.toLowerCase() === '998sdf4j2h8f5f6' ? 'n' : letrann );
+    palabrareordenada = palabrareordenada.map(letraoo => letraoo.toLowerCase() === '9h2m8ku3u1u4k8u' ? 'o' : letraoo );
+    palabrareordenada = palabrareordenada.map(letrapp => letrapp.toLowerCase() === '0045009800sdfes' ? 'p' : letrapp );
+    palabrareordenada = palabrareordenada.map(letraqq => letraqq.toLowerCase() === '789xb8kl9h79re9' ? 'q' : letraqq );
+    palabrareordenada = palabrareordenada.map(letrarr => letrarr.toLowerCase() === '9s8d7fgv4bh5h4h' ? 'r' : letrarr );
+    palabrareordenada = palabrareordenada.map(letrass => letrass.toLowerCase() === '996sdf2c45c1c5r' ? 's' : letrass );
+    palabrareordenada = palabrareordenada.map(letratt => letratt.toLowerCase() === '98fg7r8d5r1d2s6' ? 't' : letratt );
+    palabrareordenada = palabrareordenada.map(letrauu => letrauu.toLowerCase() === 's5d4f8e6w1s3g1b' ? 'u' : letrauu );
+    palabrareordenada = palabrareordenada.map(letravv => letravv.toLowerCase() === '88f5bb55s5ss5gr' ? 'v' : letravv );
+    palabrareordenada = palabrareordenada.map(letraww => letraww.toLowerCase() === '96d3x185s4g8r3r' ? 'w' : letraww );
+    palabrareordenada = palabrareordenada.map(letraxx => letraxx.toLowerCase() === '78d9f2d1d4jj2i4' ? 'x' : letraxx );
+    palabrareordenada = palabrareordenada.map(letrayy => letrayy.toLowerCase() === 'p9y8y5h8k9o4548' ? 'y' : letrayy );
+    palabrareordenada = palabrareordenada.map(letrazz => letrazz.toLowerCase() === '5f6dh78dt4hd684' ? 'z' : letrazz );
+// caso especial para ñ
+    palabrareordenada = palabrareordenada.map(letraññ => letraññ.toLowerCase() === '46546af486e4f8w' ? 'ñ' : letraññ );
+    palabrareordenada = palabrareordenada.map(empty => empty === '00100577770077w' ? ' ' : empty);
+    console.log(cadena);
 
 }
 
@@ -167,16 +209,7 @@ function wilmerLvAlgoritm(){
 }
 
 
-//-poner unavariable que divida todo dentro de 15
-//-cuando ya este esa variable hacer la logica que devuelva de 15 en 15 los valores reordenandolos a su valor original
-function algoritmoDeConverisonArrayCadena(){
-    palabra = document.getElementById('text-for-encript').value;
-    for (let index = 0; index < palabra.length; index += 15) {
-        let suSecciones = palabra.slice(index, index + 15);
-        cadena.push(suSecciones);
-    }
-    console.log(cadena);
-}
+
 
 
 //desencriptacion alura: desencritpa el mensaje encriptado con el nivel de encriptacion alura
@@ -199,10 +232,18 @@ function desencriptarAluraEnript(){
 //desencriptacion nivel wilmer lv1
 
 function desenriptationWimlerLvOne(){
+    let newPalabra ="";
     palabrareordenada="";
     palabra = document.getElementById('text-for-encript').value;
+    shoWords=document.getElementById('text-encripting').id;
     algoritmoDeConverisonArrayCadena();
+    constructorDesencritpacion();
+    newPalabra = palabrareordenada.join('');
+    addElementWord(shoWords, newPalabra);
+    newPalabra ="";
+    cadena=[];
     console.log(cadena);
+    return newPalabra;
 }
 
 //funcion para encriptar y desencriptar
