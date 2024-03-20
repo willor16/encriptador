@@ -1,7 +1,7 @@
 let palabra="";
 let cadena=[];
 let letra="";
-let variableMomentanea;
+let historialValor;
 let longitud=0;
 let descuento=1;
 let palabrareordenada=[];
@@ -336,4 +336,9 @@ function historial() {
 
     // Agregar el div principal al div seleccionado
     inputLikeDiv.appendChild(divBlock);
+}
+
+function limpiarHistorial(){
+    historialValor = document.getElementById('historial-div');
+    historialValor.innerHTML = "";
 }

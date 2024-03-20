@@ -90,18 +90,15 @@
             <div class="div-text-enctipt">
                 <textarea id="text-encripting" disabled placeholder=""></textarea>
                 <div class="div-buttons-section-transcript">
-                    <button id="button-historial" onclick="">limpiar historial</button>
+                    <button id="button-historial" onclick="limpiarHistorial()">limpiar historial</button>
                     <button onclick="" class="button-encriptar">copiar</button>
                 </div>
             </div>
         </div>
         
         <div class="historial">
-            <div class="input-like" contenteditable="true">
-                <!-- Aquí es donde irán tus bloques de texto encriptado y desencriptado. 
-                Cada bloque debería ir en su propio <div class="block"> -->
-                
-                <!-- Repite para tantos bloques como necesites -->
+            <div class="input-like" contenteditable="true" id="historial-div">
+                <!--aca va a ir el historial-->
             </div>
         </div>
     </main>
