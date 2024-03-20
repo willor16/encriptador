@@ -148,7 +148,7 @@ function constructorDesencritpacion(){
     palabrareordenada = palabrareordenada.map(letrazz => letrazz.toLowerCase() === '5f6dh78dt4hd684' ? 'z' : letrazz );
 // caso especial para ñ
     palabrareordenada = palabrareordenada.map(letraññ => letraññ.toLowerCase() === '46546af486e4f8w' ? 'ñ' : letraññ );
-    palabrareordenada = palabrareordenada.map(empty => empty === '00100577770077w' ? ' ' : empty);
+    palabrareordenada = palabrareordenada.map(empty => empty === '00100577770077w' ? '' : empty);
     console.log(cadena);
 
 }
