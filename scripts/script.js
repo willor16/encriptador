@@ -7,15 +7,17 @@ let descuento=1;
 let palabrareordenada=[];
 let shoWords="";
 let newWord ="";
-let historialOfWordsEncripted = [];
-let historialOfWordsEncripting = [];
+let historialOfWordsEncriptedODesecriptando ="";
+let historialOfWords ="";
 let newOrderLvOne = []; //array of algortim lv on
 let newWordLvWilmerOne = [];
 let secundaryLength=0;
 let tempralNumerN = 0;
 let countLengthMiddle= 0;
 let variabledesencriptarLvWilmer;
-
+let nivel=" ";
+let textoUno="";
+let textoDos="";
 //funcionpara reemplazar elemneto en html y mostrar el texto encriptado
 function addElementWord(element, text){
     let addWord = document.getElementById(element);
@@ -29,14 +31,15 @@ function aluraEnript(){
     shoWords=document.getElementById('text-encripting').id;
     let newPalabra="";
     palabra = document.getElementById('text-for-encript').value;
+    historialOfWords=palabra;
     newPalabra = palabra.replace(/e/g, 'enter');
     newPalabra = newPalabra.replace(/i/g, 'imes');
     newPalabra = newPalabra.replace(/a/g, 'ai');
     newPalabra = newPalabra.replace(/o/g, 'ober');
     newPalabra = newPalabra.replace(/u/g, 'ufat');
     console.log(newPalabra);
-    guardarHistorial();
     addElementWord(shoWords, newPalabra);
+    historialOfWordsEncriptedODesecriptando=newPalabra;
     palabra = "";
 
 }
@@ -45,7 +48,7 @@ function aluraEnript(){
 
 //funcion para reemplazar letras en los dos niveles de wilmer
 function constructorOtherMethod(){
-    cadena=[];
+    
     palabra = document.getElementById('text-for-encript').value;
     longitud = palabra.length;
     secundaryLength = longitud;
@@ -99,8 +102,7 @@ function constructorOtherMethod(){
     newOrderLvOne = palabrareordenada;
     console.log(palabrareordenada);
 
-    guardarHistorial();
-    
+    cadena=[];
     console.log
     //reiniciando cadena
     ;
@@ -158,16 +160,14 @@ function constructorDesencritpacion(){
 function replaceWilmerStyle(){
     shoWords=document.getElementById('text-encripting').id;
     constructorOtherMethod();
+    historialOfWords = palabra;
     newWord = palabrareordenada.join('');
     addElementWord(shoWords, newWord);
+    historialOfWordsEncriptedODesecriptando = newWord;
 }
 
 //historial
-function guardarHistorial(wordForSabeEncriptated, wordForSabeEncripting){
-    
-    historialOfWordsEncripted.push(wordForSabeEncriptated);
-    historialOfWordsEncripting.push(wordForSabeEncripting);
-}
+
 
 //funcion para reemplazar o reordenar las letras con el fin de que el encriptado sea mas dificil
 function wilmerLvAlgoritm(){
@@ -175,6 +175,7 @@ function wilmerLvAlgoritm(){
     shoWords=document.getElementById('text-encripting').id;
     palabra = document.getElementById('text-for-encript').value;
     let countLengthMiddle = 0;
+    historialOfWords = palabra;
     console.log(newOrderLvOne);
     //algoritm
     console.log(newOrderLvOne[newOrderLvOne.length-2]);
@@ -205,17 +206,16 @@ function wilmerLvAlgoritm(){
         console.log(newWord.length);
     }
     newWordLvWilmerOne = [];
+    historialOfWordsEncriptedODesecriptando = newWord;
     
 }
-
-
-
-
 
 //desencriptacion alura: desencritpa el mensaje encriptado con el nivel de encriptacion alura
 function desencriptarAluraEnript(){
     shoWords=document.getElementById('text-encripting').id;
     palabra = document.getElementById('text-for-encript').value;
+    
+    historialOfWords = palabra;
     let lastWord = "";
     lastWord = palabra.replace(/ufat/g, 'u');
     lastWord = lastWord.replace(/ober/g, 'o');
@@ -223,8 +223,8 @@ function desencriptarAluraEnript(){
     lastWord = lastWord.replace(/imes/g, 'i');
     lastWord = lastWord.replace(/enter/g, 'e');
     console.log(lastWord);
-    guardarHistorial();
     addElementWord(shoWords, lastWord);
+    historialOfWordsEncriptedODesecriptando = lastWord;
     palabra="";
     return lastWord;
 }
@@ -235,10 +235,13 @@ function desenriptationWimlerLvOne(){
     let newPalabra ="";
     palabrareordenada="";
     palabra = document.getElementById('text-for-encript').value;
+    historialOfWords = palabra;
     shoWords=document.getElementById('text-encripting').id;
+    addElementWord(shoWords, '');
     algoritmoDeConverisonArrayCadena();
     constructorDesencritpacion();
     newPalabra = palabrareordenada.join('');
+    historialOfWordsEncriptedODesecriptando = newPalabra;
     addElementWord(shoWords, newPalabra);
     newPalabra ="";
     cadena=[];
@@ -250,29 +253,87 @@ function desenriptationWimlerLvOne(){
 //llama a las funciones de encriptar y desencriptar segun la nececidad
 //funcion encriptar
 function encriptationGeneral(){
+    textoUno = "Texto a encriptar";
+    textoDos = "Texto encriptado";
     //validation for a type of encriptation
     let comprobation = document.getElementById('select-level-encript').value;
     if (comprobation == 'nivelAlura'){
+        nivel = "Encriptado - Nivel de encriptación alura";
         aluraEnript();
+        historial();
     }else if (comprobation == 'nivelWilmer'){
-        replaceWilmerStyle(); //just for tester
+        nivel = "Encriptado - Nivel de encriptación: encriptacion nivel Wilmer lv uno";
+        replaceWilmerStyle();
+        historial();
     }else if (comprobation == 'nivelWilmerLvTwo'){
+        nivel = "Encriptado - Nivel de encriptación: encriptacion nivel Wilmer lv dos";
         wilmerLvAlgoritm();
+        historial();
     }
-
-    guardarHistorial(palabra);
 }
 
 //funcion desencriptar
 function desencriptarGeneral(){
+    textoUno = "Texto a desencriptar";
+    textoDos = "Texto desencriptado";
     let comprobation = document.getElementById('select-level-encript').value;
     if (comprobation == 'nivelAlura'){
+        nivel = "DESENCRIPTADO - Nivel de desencriptacion: desencriptacion nivel alura";
         desencriptarAluraEnript();
+        historial();
 
     }else if(comprobation == 'nivelWilmer'){
+        nivel = "DESENCRIPTADO - Nivel de desencriptacion: desencriptacion nivel Wilmer lv uno";
         desenriptationWimlerLvOne();
+        historial();
     }else if(comprobation == 'nivelWilmerLvTwo'){
+        nivel = "DESENCRIPTADO - Nivel de desencriptacion: desencriptacion nivel Wilmer lv dos";
 
+        
+        historial();
     }
 
+}
+
+
+function historial() {
+    let inputLikeDiv = document.querySelector('.input-like');
+
+    // Crear el div principal
+    let divBlock = document.createElement('div');
+    divBlock.setAttribute('class', 'block');
+
+    // Crear el párrafo
+    let p = document.createElement('p');
+    p.textContent = nivel;
+    divBlock.appendChild(p);
+
+    // Crear la tabla
+    let table = document.createElement('table');
+
+    // Crear la fila de encabezado
+    let trHeader = document.createElement('tr');
+    let tdEncrypted = document.createElement('td');
+    tdEncrypted.textContent = textoUno;
+    let tdDecrypted = document.createElement('td');
+    tdDecrypted.textContent = textoDos;
+    trHeader.appendChild(tdEncrypted);
+    trHeader.appendChild(tdDecrypted);
+    table.appendChild(trHeader);
+
+    // Crear la fila de datos
+    let trData = document.createElement('tr');
+    let tdEncryptedData = document.createElement('td');
+    tdEncryptedData.textContent = historialOfWords; // Usar la variable para llenar el td
+    let tdDecryptedData = document.createElement('td');
+    tdDecryptedData.textContent = historialOfWordsEncriptedODesecriptando; // Usar la variable para llenar el td
+    trData.appendChild(tdEncryptedData);
+    trData.appendChild(tdDecryptedData);
+    table.appendChild(trData);
+
+    // Agregar la tabla al div principal
+    divBlock.appendChild(table);
+
+    // Agregar el div principal al div seleccionado
+    inputLikeDiv.appendChild(divBlock);
 }
