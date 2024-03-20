@@ -11,12 +11,20 @@ let historialOfWordsEncripted = [];
 let historialOfWordsEncripting = [];
 let newOrderLvOne = []; //array of algortim lv on
 let newWordLvWilmerOne = [];
-
+let secundaryLength=0;
 let tempralNumerN = 0;
-
 let countLengthMiddle= 0;
+let variabledesencriptarLvWilmer;
 
-//funciton replace level alura
+//funcionpara reemplazar elemneto en html y mostrar el texto encriptado
+function addElementWord(element, text){
+    let addWord = document.getElementById(element);
+    addWord.value= text;
+    return ;
+}
+
+
+//reemplazar letras nivel alura
 function aluraEnript(){
     shoWords=document.getElementById('text-encripting').id;
     let newPalabra="";
@@ -32,33 +40,10 @@ function aluraEnript(){
     palabra = "";
 
 }
-//funcion replace wilmer style lv1
-function replaceWilmerStyle(){
-    shoWords=document.getElementById('text-encripting').id;
-    constructorOtherMethod();
-    newWord = palabrareordenada.join('');
-    addElementWord(shoWords, newWord);
-}
 
 
-function desencriptarAluraEnript(){
-    shoWords=document.getElementById('text-encripting').id;
-    palabra = document.getElementById('text-for-encript').value;
-    let lastWord = "";
-    lastWord = palabra.replace(/ufat/g, 'u');
-    lastWord = lastWord.replace(/ober/g, 'o');
-    lastWord = lastWord.replace(/ai/g, 'a');
-    lastWord = lastWord.replace(/imes/g, 'i');
-    lastWord = lastWord.replace(/enter/g, 'e');
-    console.log(lastWord);
-    guardarHistorial();
-    addElementWord(shoWords, lastWord);
-    palabra="";
-    desencriptationWilmerLvOne();
-    return lastWord;
-}
 
-//funcion para encriptar nivel wilmer
+//funcion para reemplazar letras en los dos niveles de wilmer
 function constructorOtherMethod(){
     cadena=[];
     palabra = document.getElementById('text-for-encript').value;
@@ -68,7 +53,7 @@ function constructorOtherMethod(){
     console.log("longitud" +longitud);
     console.log(palabra[palabra.length-1]);
 
-    //cicle, this is for make a array with letters of cadena variable
+    //ciclo para reemplazar las 27 letras del abecedario
     while (longitud>0){
         longitud --;
         letra=palabra[palabra.length-descuento];
@@ -106,15 +91,14 @@ function constructorOtherMethod(){
     palabrareordenada = palabrareordenada.map(letraL => letraL.toLowerCase() === 'x' ? '78d9f2d1d4jj2i4' :letraL);
     palabrareordenada = palabrareordenada.map(letraM => letraM.toLowerCase() === 'y' ? 'p9y8y5h8k9o4548' :letraM);
     palabrareordenada = palabrareordenada.map(letraN => letraN.toLowerCase() === 'z' ? '5f6dh78dt4hd684' :letraN);
-    //case for languages with ñ letter
+    //caso especial para la letra ñ
     palabrareordenada = palabrareordenada.map(letraÑ => letraÑ.toLowerCase() === 'ñ' ? '46546af486e4f8w' :letraÑ);
-    //empty value
+    //para un espacio o valor vacio
     palabrareordenada = palabrareordenada.map(spaceWord => spaceWord === " " ? '00100577770077w' :spaceWord);
-    //save word in a other array because need saver for other array
+    //salvamos la palabra en un nuevo array para reordenarlo despues o imprimirlo en un input
     newOrderLvOne = palabrareordenada;
     console.log(palabrareordenada);
-    //print new array but convert array to string
-    
+
     guardarHistorial();
     
     console.log
@@ -122,50 +106,30 @@ function constructorOtherMethod(){
     cadena = [];
 }
 
+//funcion para construir un array y poer sustituir letras 
+function constructorDesencritpacion(){
 
-//function for save in a temporal variable all words
+}
+
+
+//funcion para convertir el arrray en un string
+function replaceWilmerStyle(){
+    shoWords=document.getElementById('text-encripting').id;
+    constructorOtherMethod();
+    newWord = palabrareordenada.join('');
+    addElementWord(shoWords, newWord);
+}
+
+//historial
 function guardarHistorial(wordForSabeEncriptated, wordForSabeEncripting){
-    //save words encriptated and words no encripted
+    
     historialOfWordsEncripted.push(wordForSabeEncriptated);
     historialOfWordsEncripting.push(wordForSabeEncripting);
 }
 
-function encriptationGeneral(){
-    //validation for a type of encriptation
-    let comprobation = document.getElementById('select-level-encript').value;
-    if (comprobation == 'nivelAlura'){
-        aluraEnript();
-    }else if (comprobation == 'nivelWilmer'){
-        replaceWilmerStyle();
-        wilmerLvAlgoritm(); //just for tester
-    }else if (comprobation == 'nivelWilmerLvTwo'){
-        
-    }
-
-    guardarHistorial(palabra);
-}
-
-function desencriptarGeneral(){
-    let comprobation = document.getElementById('select-level-encript').value;
-    if (comprobation == 'nivelAlura'){
-        desencriptarAluraEnript();
-
-    }else if(comprobation == 'nivelWilmer'){
-        
-    }else if(comprobation == 'nivelWilmerLvTwo'){
-
-    }
-}
-
-function addElementWord(element, text){
-    let addWord = document.getElementById(element);
-    addWord.value= text;
-    return ;
-}
-
-
-//function for replace with algoritm
+//funcion para reemplazar o reordenar las letras con el fin de que el encriptado sea mas dificil
 function wilmerLvAlgoritm(){
+    constructorOtherMethod();
     shoWords=document.getElementById('text-encripting').id;
     palabra = document.getElementById('text-for-encript').value;
     let countLengthMiddle = 0;
@@ -201,14 +165,73 @@ function wilmerLvAlgoritm(){
     newWordLvWilmerOne = [];
     
 }
-// iniciando logica de desencriptacion lv2
+
 
 //-poner unavariable que divida todo dentro de 15
 //-cuando ya este esa variable hacer la logica que devuelva de 15 en 15 los valores reordenandolos a su valor original
-function desencriptationWilmerLvOne(){
-    for (let index = 0; index < newWord.length; index += 15) {
-        let suSecciones = newWord.slice(index, index + 15);
+function algoritmoDeConverisonArrayCadena(){
+    palabra = document.getElementById('text-for-encript').value;
+    for (let index = 0; index < palabra.length; index += 15) {
+        let suSecciones = palabra.slice(index, index + 15);
         cadena.push(suSecciones);
     }
     console.log(cadena);
+}
+
+
+//desencriptacion alura: desencritpa el mensaje encriptado con el nivel de encriptacion alura
+function desencriptarAluraEnript(){
+    shoWords=document.getElementById('text-encripting').id;
+    palabra = document.getElementById('text-for-encript').value;
+    let lastWord = "";
+    lastWord = palabra.replace(/ufat/g, 'u');
+    lastWord = lastWord.replace(/ober/g, 'o');
+    lastWord = lastWord.replace(/ai/g, 'a');
+    lastWord = lastWord.replace(/imes/g, 'i');
+    lastWord = lastWord.replace(/enter/g, 'e');
+    console.log(lastWord);
+    guardarHistorial();
+    addElementWord(shoWords, lastWord);
+    palabra="";
+    return lastWord;
+}
+
+//desencriptacion nivel wilmer lv1
+
+function desenriptationWimlerLvOne(){
+    palabrareordenada="";
+    palabra = document.getElementById('text-for-encript').value;
+    algoritmoDeConverisonArrayCadena();
+    console.log(cadena);
+}
+
+//funcion para encriptar y desencriptar
+//llama a las funciones de encriptar y desencriptar segun la nececidad
+//funcion encriptar
+function encriptationGeneral(){
+    //validation for a type of encriptation
+    let comprobation = document.getElementById('select-level-encript').value;
+    if (comprobation == 'nivelAlura'){
+        aluraEnript();
+    }else if (comprobation == 'nivelWilmer'){
+        replaceWilmerStyle(); //just for tester
+    }else if (comprobation == 'nivelWilmerLvTwo'){
+        wilmerLvAlgoritm();
+    }
+
+    guardarHistorial(palabra);
+}
+
+//funcion desencriptar
+function desencriptarGeneral(){
+    let comprobation = document.getElementById('select-level-encript').value;
+    if (comprobation == 'nivelAlura'){
+        desencriptarAluraEnript();
+
+    }else if(comprobation == 'nivelWilmer'){
+        desenriptationWimlerLvOne();
+    }else if(comprobation == 'nivelWilmerLvTwo'){
+
+    }
+
 }

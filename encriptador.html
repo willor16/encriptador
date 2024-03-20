@@ -75,34 +75,49 @@
     <main>
         <div class="div-general-encript">
             <div class="div-text-enctipt">
-                
-            <input type="text" id="text-for-encript" placeholder="ingrese texto a encriptar">
-            <div class="div-buttons-section-transcript">
-                <select name="" id="select-level-encript" class="style-option-bar" >
-                    <option value="nivelAlura">nivel alura</option>
-                    <option value="nivelWilmer">nivel wilmer</option>
-                    <option value="nivelWilmerLvTwo">nivel wilmer lv.2</option>
-                </select>
-                <button id="" onclick="encriptationGeneral()">Encriptar</button>
-                <button id="" onclick="desencriptarGeneral()">desencriptar</button>
-                
-            </div>
-            </div>
-
-
-            <div class="div-text-enctipt">
-                <input type="text" id="text-encripting" disabled placeholder="">
+                <textarea id="text-for-encript" placeholder="ingrese texto a encriptar"></textarea>
                 <div class="div-buttons-section-transcript">
-                    <button id="button-historial" onclick="">historial</button>
+                    <select name="" id="select-level-encript" class="style-option-bar" >
+                        <option value="nivelAlura">nivel alura</option>
+                        <option value="nivelWilmer">nivel wilmer</option>
+                        <option value="nivelWilmerLvTwo">nivel wilmer lv.2</option>
+                    </select>
+                    <button id="" onclick="encriptationGeneral()">Encriptar</button>
+                    <button id="" onclick="desencriptarGeneral()">desencriptar</button>
+                </div>
+            </div>
+        
+            <div class="div-text-enctipt">
+                <textarea id="text-encripting" disabled placeholder=""></textarea>
+                <div class="div-buttons-section-transcript">
+                    <button id="button-historial" onclick="">limpiar historial</button>
                     <button onclick="" class="button-encriptar">copiar</button>
                 </div>
             </div>
-            
         </div>
+        
         <div class="historial">
-            <span>
-            <input type="text" placeholder="historial">
-            </span>
+            <div class="input-like" contenteditable="true">
+                <!-- Aquí es donde irán tus bloques de texto encriptado y desencriptado. 
+                Cada bloque debería ir en su propio <div class="block"> -->
+                <div class="block">
+                    <p>Encriptado - Nivel de encriptación</p>
+                    <table>
+                        <tr>
+                            <td>Texto Encriptado</td>
+                            <td>Texto Desencriptado</td>
+                        </tr>
+                        <!-- Aquí es donde irán tus palabras encriptadas y desencriptadas. 
+                        Cada par de palabras debería ir en su propio <tr>, con cada palabra en un <td> -->
+                        <tr>
+                            <td id="palabra-encriptada-html"></td>
+                            <td id="palabra-desencriptada-html"></td>
+                        </tr>
+                        <!-- Repite para tantas palabras como necesites -->
+                    </table>
+                </div>
+                <!-- Repite para tantos bloques como necesites -->
+            </div>
         </div>
     </main>
 
