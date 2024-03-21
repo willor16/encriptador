@@ -255,6 +255,100 @@
 	font-size: 1.25rem;
 }
 
+
+
+/*main style*/
+.general-div-information{
+	margin-top: 180px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	align-items: center;
+}
+
+.general-div-information h2{
+	margin-bottom: 15px;
+	border-style: solid;
+	border-radius: 7px;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+.container-description{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	border: black 3px;
+	border-style: solid;
+	border-radius: 7px;
+	background-color: #3f424b;
+	color: white;
+
+}
+
+.div-section-information h3, p{
+	text-align: center;
+	padding-bottom: 15px;
+	
+}
+/*end main*
+
+/*information challenge*/
+.information-general-alura-one{
+	display: flex;
+	align-items:center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.information-challenge-div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.information-general-alura-one h3{
+	padding-bottom: 20px;
+	font-size: 35px;
+}
+
+.information-alura{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding: 20px 20px;
+	width: 70%;
+	text-decoration: none;
+	position: relative;
+	margin-top: -150px;
+	background-color: white;
+	margin-bottom: 100px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 7px;
+	border: 2px;
+	/*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 20px;
+}
+
+.information-alura a{
+	color: rgb(219, 33, 33);
+}
+
+.img-information-alura{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 /*Footer*/
 .footer {
 	padding-top: 5.5rem;
@@ -455,8 +549,102 @@
 		margin-left: 1rem;
 	}
 	/* end of extra pages */
+
+	
+/*main design responsive*/
+	/*main style*/
+.general-div-information{
+	margin-top: 180px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	align-items: center;
+}
+
+.general-div-information h2{
+	margin-bottom: 15px;
+	border-style: solid;
+	border-radius: 7px;
+	background-color: white;
+	color: black;
+}
+
+.container-description{
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	border: black 3px;
+	border-style: solid;
+	border-radius: 7px;
+	background-color: #3f424b;
+	color: white;
+
+}
+
+.div-section-information h3, p{
+	text-align: center;
+	padding-bottom: 15px;
+	
+}
+/*end main*
+
+/*information challenge*/
+.information-general-alura-one{
+	display: flex;
+	align-items:center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.information-challenge-div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.information-general-alura-one h3{
+	padding-bottom: 20px;
+	font-size: 35px;
+}
+
+.information-alura{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 20px;
+	width: 70%;
+	text-decoration: none;
+	position: relative;
+	margin-top: -150px;
+	background-color: white;
+	margin-bottom: 100px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 7px;
+	border: 2px;
+	/*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 20px;
+}
+
+.information-alura a{
+	color: rgb(219, 33, 33);
+}
+
+.img-information-alura{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 }
     
+
 
 
 
@@ -619,5 +807,95 @@
 		margin-left: 2.875rem;
 	}
 	/* end of extra pages */
+	/*main style*/
+.general-div-information{
+	margin-top: 180px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	align-items: center;
+}
+
+.general-div-information h2{
+	margin-bottom: 15px;
+	border-style: solid;
+	border-radius: 7px;
+	background-color: white;
+	color: black;
+}
+
+.container-description{
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	border: black 3px;
+	border-style: solid;
+	border-radius: 7px;
+	background-color: #3f424b;
+	color: white;
+
+}
+
+.div-section-information h3, p{
+	text-align: center;
+	padding-bottom: 15px;
+	
+}
+/*end main*
+
+/*information challenge*/
+.information-general-alura-one{
+	display: flex;
+	align-items:center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.information-challenge-div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.information-general-alura-one h3{
+	padding-bottom: 20px;
+	font-size: 35px;
+}
+
+.information-alura{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 20px;
+	width: 70%;
+	text-decoration: none;
+	position: relative;
+	margin-top: -150px;
+	background-color: white;
+	margin-bottom: 100px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 7px;
+	border: 2px;
+	/*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 20px;
+}
+
+.information-alura a{
+	color: rgb(219, 33, 33);
+}
+
+.img-information-alura{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 }
 /* end of min-width 1200px */
