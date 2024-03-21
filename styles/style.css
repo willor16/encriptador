@@ -27,6 +27,7 @@
 }
 
 /*style of main*/
+/*encriptador*/
 .div-text-enctipt{
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@
 #text-for-encript, #text-encripting{
 	overflow: auto; /* Esto hace que aparezca una barra de desplazamiento cuando el contenido es demasiado grande */
     white-space: pre-wrap; /* Esto hace que el texto se adapte al input */
-    width: 65%;
+    width: auto;
     height: 400px;
     margin-top: 75px;
     margin-bottom: 35px;
@@ -59,7 +60,7 @@
 .div-general-encript{
 	margin-top: 75px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -108,6 +109,7 @@
     background-color: #f2f2f2;
 }
 
+/*end main*
 
 
 
@@ -845,6 +847,89 @@
 	padding-bottom: 15px;
 	
 }
+
+/*encriptador*/
+.div-text-enctipt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#text-for-encript, #text-encripting{
+	overflow: auto; /* Esto hace que aparezca una barra de desplazamiento cuando el contenido es demasiado grande */
+    white-space: pre-wrap; /* Esto hace que el texto se adapte al input */
+    width: 65%;
+    height: 400px;
+    margin-top: 75px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 7px;
+}
+
+.div-buttons-section-transcript{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*when text has ben encriptated*/
+.div-general-encript{
+	margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*style of option*/
+.style-option-bar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*historial style*/
+.input-like {
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow: auto;
+    height: 400px;
+    width: 75%;
+	margin-top: 20px;
+    margin:40px auto;
+}
+
+.block {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.block table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.block th, .block td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.block th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.block tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
 /*end main*
 
 /*information challenge*/
