@@ -32,13 +32,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 80%;
 }
 
 #text-for-encript, #text-encripting{
 	overflow: auto; /* Esto hace que aparezca una barra de desplazamiento cuando el contenido es demasiado grande */
     white-space: pre-wrap; /* Esto hace que el texto se adapte al input */
-    width: auto;
+    width: 95%;
     height: 400px;
     margin-top: 75px;
     margin-bottom: 35px;
@@ -62,6 +62,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+	width: 100%;
 }
 
 /*style of option*/
@@ -853,13 +854,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 80%;
 }
 
 #text-for-encript, #text-encripting{
 	overflow: auto; /* Esto hace que aparezca una barra de desplazamiento cuando el contenido es demasiado grande */
     white-space: pre-wrap; /* Esto hace que el texto se adapte al input */
-    width: 65%;
+    width: 80%;
     height: 400px;
     margin-top: 75px;
     margin-bottom: 35px;
