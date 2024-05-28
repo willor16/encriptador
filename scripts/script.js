@@ -342,3 +342,6 @@ function limpiarHistorial(){
     historialValor = document.getElementById('historial-div');
     historialValor.innerHTML = "";
 }
+
+
+//animaciones 
