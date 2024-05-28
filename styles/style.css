@@ -61,6 +61,43 @@ button {
 
 
 
+/* Estilos para el contenido */
+/* Whiteboard background */
+.container-contact {
+	background-image: url("https://www.freepik.com/free-photos-vectors/whiteboard-background"); /* Replace with a background image URL */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 250px;
+	margin-bottom: 150px;
+  }
+  
+  
+  /* Estilos para centrar el contenido */
+  .centered-contact {
+	display: flex; /* Utilizar flexbox */
+	flex-direction: column; /* Apilar elementos verticalmente */
+	align-items: center; /* Centrar horizontalmente */
+	justify-content: center; /* Centrar verticalmente */
+  }
+  
+  /* Estilos para las redes sociales */
+  .social-icons-contact {
+	display: flex; /* Utilizar flexbox */
+	justify-content: center; /* Centrar horizontalmente */
+	margin-top: 1rem; /* Espacio superior */
+  }
+  
+  .social-icons-contact a {
+	color: #3182ce; /* Color del icono */
+	margin: 0 0.5rem; /* Margen horizontal */
+	font-size: 1.5rem; /* Tamaño del icono */
+  }
+  
+  .social-icons-contact a:hover {
+	color: #4a90e2; /* Cambio de color al pasar el cursor */
+  }
+  
 
 
 
