@@ -84,12 +84,14 @@ button {
   /* Estilos para las redes sociales */
   .social-icons-contact {
 	display: flex; /* Utilizar flexbox */
+	flex-direction: column;
 	justify-content: center; /* Centrar horizontalmente */
+	align-items: center;
 	margin-top: 1rem; /* Espacio superior */
   }
   
   .social-icons-contact a {
-	color: #3182ce; /* Color del icono */
+	color: #174066; /* Color del icono */
 	margin: 0 0.5rem; /* Margen horizontal */
 	font-size: 1.5rem; /* Tamaño del icono */
   }
@@ -98,14 +100,11 @@ button {
 	color: #4a90e2; /* Cambio de color al pasar el cursor */
   }
   
-
-
-
-
-
-
-
-
+  .font-bold, text-gray-700{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
 
 
 
