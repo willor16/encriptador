@@ -189,7 +189,126 @@ button {
   }
 
 
+  /*estilos de about en proyectos*/
+  .about-estilo-proyecto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 1500px;
+	margin-top: 70px;
+	
+	font-family: 'Times New Roman', Times, serif;
+  }
 
+  .proyecto-titulo{
+	font-family: 'Times New Roman', Times, serif;
+	display: flex;
+	margin-top: 70px;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	color: white;
+  }
+
+  .proyecto-detalles{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 95%;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	padding: 30px 70px;
+	gap: 50px;
+	background-color: rgba(77, 77, 77, 0.35);
+  }
+
+  .contenedorimagenes-proyecto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	gap: 20px;
+  }
+  .primerasdosimagenes-proyectos{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+  }
+
+  .detallesdelproyecto-detalles{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	gap: 30px;
+  }
+  .detailles-proyectos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	gap: 20px;
+  }
+  .detailles-proyectos p{
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-bottom: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: white;
+  }
+
+  .masdetalles-proyectos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 60%;
+	margin-top: 55px;
+	margin-bottom: 40px;
+	gap: 50px;
+	font-size: large;
+	color: white;
+  }
+  .masdetalles-proyectos p{
+	text-align: center;
+	padding-bottom: 1px;
+	margin-bottom: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+  }
+
+  .conclusiones-proyectos{
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	font-size: large;
+	gap: 20px;
+  }
+  .li-style-proyectos{
+	
+	text-align: center;
+	justify-content: center;
+	margin-top: 70px;
+	margin-bottom: 80px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .about-background {
+	background-image: url('/images/wallhaven-3l8yj6.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
 
 
 
