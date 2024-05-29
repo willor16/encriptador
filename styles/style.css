@@ -204,7 +204,8 @@ button {
   .proyecto-titulo{
 	font-family: 'Times New Roman', Times, serif;
 	display: flex;
-	margin-top: 70px;
+	margin-top: 60px;
+	margin-bottom: 20px;
 	align-items: center;
 	align-content: center;
 	justify-content: center;
@@ -274,7 +275,7 @@ button {
 	justify-content: center;
 	width: 60%;
 	margin-top: 55px;
-	margin-bottom: 40px;
+	margin-bottom: 90px;
 	gap: 50px;
 	font-size: large;
 	color: white;
