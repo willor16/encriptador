@@ -351,23 +351,23 @@ function copiar(){
 }
 
 //contactar mediante formulario
-const btnSend = document.getElementById('boton-enviar-datos-email');
+const btn = document.getElementById('boton-enviar-datos-email');
 
 document.getElementById('contactForm')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btnSend.value = 'Enviando...';
+   btn.value = 'enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_eptxk8s';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btnSend.value = 'Enviar';
+      btn.value = 'Enviar';
       alert('Sent!');
     }, (err) => {
-      btnSend.value = 'Enviar';
+      btn.value = 'Enviar';
       alert(JSON.stringify(err));
     });
 });
