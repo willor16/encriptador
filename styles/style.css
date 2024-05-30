@@ -202,7 +202,7 @@ button {
 /* Estilos para el contenido */
 /* Whiteboard background */
 .container-contact {
-	background-image: url('/images/fondocontacto.jpg'); /* Replace with the path to your image file */
+	background-image: url('../images/fondocontacto.jpg'); /* Replace with the path to your image file */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
