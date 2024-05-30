@@ -129,7 +129,7 @@ function constructorDesencritpacion(){
     palabrareordenada = palabrareordenada.map(letraee => letraee.toLowerCase() === '78s9fg5f5gh7dr8' ? 'e' : letraee );
     palabrareordenada = palabrareordenada.map(letraff => letraff.toLowerCase() === '00as8790054d000' ? 'f' : letraff );
     palabrareordenada = palabrareordenada.map(letragg => letragg.toLowerCase() === '64xfd87df95d887' ? 'g' : letragg );
-    palabrareordenada = palabrareordenada.map(letrahh => letrahh.toLowerCase() === '64xfd87df95d887' ? 'h' : letrahh );
+    palabrareordenada = palabrareordenada.map(letrahh => letrahh.toLowerCase() === '87sf78qq9ybb786' ? 'h' : letrahh );
     palabrareordenada = palabrareordenada.map(letraii => letraii.toLowerCase() === '45af5e6s2v1gu7n' ? 'i' : letraii );
     palabrareordenada = palabrareordenada.map(letrajj => letrajj.toLowerCase() === '961dcng148hg7b7' ? 'j' : letrajj );
     palabrareordenada = palabrareordenada.map(letrakk => letrakk.toLowerCase() === 'a584dhkohgyu009' ? 'k' : letrakk );
@@ -179,7 +179,7 @@ function wilmerLvAlgoritm(){
     console.log(newOrderLvOne);
     //algoritm
     console.log(newOrderLvOne[newOrderLvOne.length-2]);
-    if (secundaryLength%2 == 0){
+    
         countLengthMiddle = secundaryLength/2;
         tempralNumerN= 0;
         while(countLengthMiddle< secundaryLength){
@@ -204,7 +204,7 @@ function wilmerLvAlgoritm(){
         console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-3]);
         console.log(newWordLvWilmerOne[newWordLvWilmerOne.length-4]);
         console.log(newWord.length);
-    }
+    
     newWordLvWilmerOne = [];
     historialOfWordsEncriptedODesecriptando = newWord;
     
@@ -343,5 +343,31 @@ function limpiarHistorial(){
     historialValor.innerHTML = "";
 }
 
+function copiar(){
+    let texto= document.getElementById('text-encripting').value;
+    console.log(texto);
+    navigator.clipboard.writeText(texto);
 
-//animaciones 
+}
+
+//contactar mediante formulario
+const btnSend = document.getElementById('boton-enviar-datos-email');
+
+document.getElementById('contactForm')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btnSend.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_eptxk8s';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btnSend.value = 'Enviar';
+      alert('Sent!');
+    }, (err) => {
+      btnSend.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
+});
