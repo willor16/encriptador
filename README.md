@@ -1,103 +1,118 @@
-# 🔐 Text Encrypter & Decrypter Web App
+<div align="center">
 
-**Challenge 1 – Oracle Next Education / Alura Latam**  
-**Encrypter** built using **HTML, CSS & JavaScript**, applying substitution rules to encrypt and decrypt text, based on skills learned in Alura’s courses.
+  <br/>
+  <p>
+    🔐 ✨ 💬
+  </p>
+  <h1><strong>Text Encrypter & Decrypter Web App</strong></h1>
+  <p>
+    <b>Challenge #1 - Oracle ONE / Alura Latam</b><br/>
+    A modern and responsive web tool to encrypt and decrypt text using simple substitution rules.
+  </p>
+  <br/>
 
----
+  <p>
+    <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" alt="HTML5">
+    <img src="https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3" alt="CSS3">
+    <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript" alt="JavaScript">
+    <img src="https://img.shields.io/badge/status-completed-success?style=for-the-badge" alt="Status">
+    <img src="https://img.shields.io/github/license/willor16/encriptador?style=for-the-badge" alt="License">
+  </p>
+  <br/>
+</div>
 
-## 🧩 Key Features
-
-- 🔁 **Encrypt / Decrypt**: Convert text using vowel substitution:
-  - *a* → *ai*
-  - *e* → *enter*
-  - *i* → *imes*
-  - *o* → *ober*
-  - *u* → *ufat*
-- 🚫 **Input validation**: Only lowercase letters, no accents or special characters.
-- 📋 **Copy functionality**: A button to copy the result to clipboard.
-- ⚠️ **Alerts**: Warnings when input is invalid.
-- 📱 **Responsive design**: Interface adapts across desktops, tablets, and mobile.
-
----
-
-## 🛠️ Project Structure
-
-encriptador/
-├── index.html # Main UI
-├── styles/ # Custom CSS
-│ └── style.css
-├── js/ # JavaScript logic
-│ └── encriptador.js
-├── images/ # UI visuals (optional)
-├── about.html # About/info page
-├── contacto.html # Contact form or info
-├── encriptador.html # Separate encryption page
-└── README.md # Project description
-
-yaml
-Copiar
-Editar
+<details>
+  <summary><strong>📘 Table of Contents</strong></summary>
+  <ol>
+    <li><a href="#-about">About</a></li>
+    <li><a href="#-features">Features</a></li>
+    <li><a href="#-tech-stack">Tech Stack</a></li>
+    <li><a href="#-how-to-use">How to Use</a></li>
+    <li><a href="#-screenshots">Screenshots</a></li>
+    <li><a href="#-contributing">Contributing</a></li>
+    <li><a href="#-license">License</a></li>
+    <li><a href="#-contact">Contact</a></li>
+  </ol>
+</details>
 
 ---
 
-## 🚀 Quick Start
+## 🚀 About
 
-### Prerequisites
+**Encriptador** is a web application that allows users to encrypt and decrypt text by substituting vowels with custom strings. This project was developed as part of the first challenge from Oracle Next Education + Alura Latam.
 
-- Modern web browser (Chrome, Firefox, Edge)
-- Static web hosting or local files access
+---
 
-### Installation & Setup
+## ✨ Features
 
+- 🔐 **Encrypt** text with predefined vowel substitutions
+- 🔓 **Decrypt** encoded messages
+- 🧹 **Clean UI** with responsive design
+- 🚫 **Input validation** for lowercase letters only
+- 📋 **Copy to clipboard** functionality
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Description |
+|------------|-------------|
+| **HTML5**  | Page structure |
+| **CSS3**   | Visual design and responsiveness |
+| **JavaScript (ES6)** | Logic for encryption and decryption |
+
+---
+
+## 📎 How to Use
+
+1. **Clone the repository**  
 ```bash
 git clone https://github.com/willor16/encriptador.git
 cd encriptador
-Open index.html or encriptador.html in your browser.
+```
 
-Use the UI to encrypt or decrypt text as per the rules.
+2. **Open `index.html` in your browser**
 
-Copy result using the “Copy” button once conversion is done.
+3. **Start typing** – use the interface to encrypt or decrypt your text.
 
-📖 How It Works
-Enter your text in the input field (only lowercase, no accents).
+4. **Copy the result** with one click using the "Copy" button.
 
-Choose operation: Encrypt or Decrypt.
+> Only lowercase letters without accents are allowed.
 
-The result appears instantly in the output area.
+---
 
-Press “Copy” to copy the result to clipboard.
+## 🖼 Screenshots
 
-If invalid input is entered, an alert message appears.
+| Home View | Encrypted Result |
+|-----------|------------------|
+| ![Screenshot 1](https://via.placeholder.com/400x250.png?text=Home+Page) | ![Screenshot 2](https://via.placeholder.com/400x250.png?text=Encrypted+Text) |
 
-📸 Screenshots
-Insert screenshots below (local paths or hosted links):
+| Mobile Layout | Alert Example |
+|---------------|----------------|
+| ![Screenshot 3](https://via.placeholder.com/400x250.png?text=Mobile+Responsive) | ![Screenshot 4](https://via.placeholder.com/400x250.png?text=Invalid+Input+Alert) |
 
-Home View	Encryption in Action
+---
 
-Mobile Layout	Copy Alert Example
+## 🙌 Contributing
 
-🧪 Why Use This?
-Excellent beginner-level project for practicing string manipulation and DOM interaction.
+Contributions are welcome!
 
-Ideal for understanding basic encryption logic and user input validation.
+1. Fork the repo  
+2. Create a feature branch (`git checkout -b feature/MyFeature`)  
+3. Commit your changes (`git commit -m 'Add feature'`)  
+4. Push to the branch (`git push origin feature/MyFeature`)  
+5. Open a Pull Request
 
-Clean, modular codebase, easy to extend with new features like file input or multilingual support.
+---
 
-🤝 Contributing
-Fork the repository
+## 📜 License
 
-Create a new branch: git checkout -b feature/YourFeature
+Distributed under the MIT License.  
+See `LICENSE` for more details.
 
-Make your changes and commit: git commit -m "Add awesome feature"
+---
 
-Push to your branch: git push origin feature/YourFeature
+## 📞 Contact
 
-Open a Pull Request describing your improvements
-
-📄 License
-This project is licensed under the MIT License.
-Feel free to use, modify, and redistribute with attribution.
-
-📞 Contact
-Wilmer Choxom – GitHub Profile
-Repository: github.com/willor16/encriptador
+**Wilmer Choxom** – [GitHub](https://github.com/willor16)  
+Project: [https://github.com/willor16/encriptador](https://github.com/willor16/encriptador)
